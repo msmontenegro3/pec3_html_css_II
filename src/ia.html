@@ -5,13 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cooking Contest 2024</title>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <!-- do not remove this line! -->
 </head>
 
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-100 text-gray-800 flex flex-col min-h-screen">
 
-    <!-- NAVBAR -->
-    <header class="bg-gray-900 text-white">
+    <!-- HEADER FIJO -->
+    <header class="bg-gray-900 text-white fixed top-0 left-0 right-0 z-10">
         <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
             <div class="text-xl font-semibold">Cooking Contest 2024</div>
             <nav>
@@ -25,16 +26,17 @@
         </div>
     </header>
 
-    <!-- CONTESTANTS SECTION -->
-    <main class="max-w-7xl mx-auto px-6 py-10">
+    <!-- CONTENIDO -->
+    <main class="flex-grow pt-24 pb-16 px-6 max-w-7xl mx-auto">
+        <!-- Sección Contestants -->
         <section class="text-center mb-12">
             <h1 class="text-3xl font-bold mb-4">Contestants</h1>
             <p class="text-gray-600 mb-6">This section describes the best contestants.</p>
-            <img src="https://images.unsplash.com/photo-1613145993485-6e7b6e9e1f3e" alt="Vegetables and shrimp"
-                class="mx-auto rounded-lg shadow-md w-full max-w-2xl">
+            <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1200&q=80"
+                alt="Vegetables and shrimp" class="mx-auto rounded-lg shadow-md w-full max-w-2xl" />
         </section>
 
-        <!-- RECIPES SECTION -->
+        <!-- Sección Recipes -->
         <section>
             <h2 class="text-2xl font-semibold mb-6">Recipes</h2>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -63,12 +65,24 @@
                     </div>
                 </div>
 
-                <!-- Puedes añadir más tarjetas aquí -->
+                <!-- Card 3 -->
+                <div class="bg-white rounded-lg shadow p-4">
+                    <h3 class="text-xl font-semibold mb-3">Classic Paella</h3>
+                    <div class="flex items-center">
+                        <img src="https://i.pravatar.cc/48?img=3" alt="Lucía Torres"
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-medium">Lucía Torres</p>
+                            <p class="text-sm text-gray-600">A timeless Spanish rice and seafood dish.</p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
+    <!-- FOOTER NO FIJO -->
     <footer class="bg-gray-900 text-white mt-12">
         <div class="max-w-7xl mx-auto px-6 py-6 text-center">
             <p class="font-semibold mb-2">Cooking Contest 2024</p>
