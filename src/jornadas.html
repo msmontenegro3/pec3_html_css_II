@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+    <title>Participantes</title>
+</head>
+
+<body>
+
+    <include src="./views/header.html"></include>
+
+    <main class="container max-w-96 md:max-w-screen-md lg:max-w-screen-lg">
+        <h1>Participantes</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- CARD1 -->
+            <div>
+                <include src="./views/card.html" locals='{
+                "image": "../src/assets/images/participante1.jpg",
+                "alt": "Foto de Carlos Ríos",
+                "name": "Carlos Ríos",
+                "description": "Ingeniero ambiental y consultor en sostenibilidad. Con más de 15 años de experiencia en proyectos de economía circular"
+            }' />
+            </div>
+
+            <!-- CARD2 -->
+            <div>
+                <include src="./views/card.html" locals='{
+                "image": "../src/assets/images/participante2.jpg",
+                "alt": "Foto de Andrés Castillo",
+                "name": "Andrés Castillo",
+                "description": "Ingeniero industrial especializado en procesos de manufactura sostenible. Ha liderado iniciativas de reutilización de materiales en grandes corporaciones"
+            }' />
+            </div>
+
+            <!-- CARD3 -->
+            <div>
+                <include src="./views/card.html" locals='{
+                "image": "../src/assets/images/participante3.jpg",
+                "alt": "Foto de Sofía Morales",
+                "name": "Sofía Morales",
+                "description": "Experta en economía social y comunitaria. Sofía es investigadora en modelos de negocio sostenibles y defensora de la economía circular como herramienta para fortalecer las economías locales."
+                }' />
+            </div>
+
+            <!-- CARD4 -->
+            <div>
+                <include src="./views/card.html" locals='{
+                "image": "../src/assets/images/participante4.jpg",
+                "alt": "Foto de Valeria Pérez",
+                "name": "Valeria Pérez",
+                "description": "Diseñadora de productos sostenibles. Valeria se enfoca en la creación de objetos funcionales a partir de materiales reciclados, promoviendo un diseño circular que minimiza los residuos."
+                }' />
+            </div>
+
+
+            <!-- CARD5 -->
+            <div>
+                <include src="./views/card.html" locals='{
+                "image": "../src/assets/images/participante5.jpg",
+                "alt": "Foto de Javier Torres",
+                "name": "Javier Torres",
+                "description": "Economista especializado en innovación y sostenibilidad. Ha asesorado a startups y empresas sociales en la implementación de modelos de negocio circulares"
+                }' />
+            </div>
+
+
+            <!-- CARD6 -->
+            <div>
+                <include src="./views/card.html" locals='{
+                "image": "../src/assets/images/participante6.jpg",
+                "alt": "Foto de Laura Fernández",
+                "name": "Laura Fernández",
+                "description": "Investigadora en ciencias ambientales y defensora del uso eficiente de los recursos. Laura ha publicado varios estudios sobre gestión de residuos y economía regenerativa."
+                }' />
+            </div>
+
+
+
+        </div>
+
+
+
+    </main>
+
+    <include src="./views/footer.html"></include>
+
+
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
+</html>
