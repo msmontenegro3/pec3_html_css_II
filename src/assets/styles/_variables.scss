@@ -4,5 +4,13 @@
 }
 
 h1 {
-    @apply py-4 font-lexend text-3xl font-black text-darkblue text-center;
+    @apply py-4 font-lexend text-4xl font-black text-darkblue text-center;
+}
+
+body {
+    @apply text-darkblue;
+}
+
+a:not(nav a){
+    @apply font-bold underline hover:text-lighthover;
 }
